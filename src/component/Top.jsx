@@ -30,8 +30,8 @@ function HeadSection() {
 					height={["100px", "150px"]}
 					width={["100px", "150px"]}
 					borderRadius={["50px", "75px"]}
-					border="solid 7px rgba(87, 105, 244, 0.87)"
-					boxShadow={"0 0 20px black"}
+					border="solid 7px #44edffde"
+					boxShadow={"0 0 10px #7d52ff"}
 				/>
 			</Flex>
 
@@ -54,16 +54,16 @@ function HeadSection() {
 						<Text>Bangalore,India</Text>
 					</Flex>
 					<Flex mt={["0.5rem", "0"]} pl="1rem" alignItems="center">
-            <IoIosCall color="blue" />
-            <Link href='tel:+919482101148'>
-						<Text>+91 9482101148 </Text>
-            </Link>
+						<IoIosCall color="blue" />
+						<Link href="tel:+919482101148">
+							<Text>+91 9482101148 </Text>
+						</Link>
 					</Flex>
 					<Flex mt={["0.5rem", "0"]} pl="1rem" alignItems="center">
-            <MdEmail color="blue" />
-            <Link href='mailto:snhkelemane@gmail.com'>
-						<Text>snhkelemane@gmail.com</Text>
-            </Link>
+						<MdEmail color="blue" />
+						<Link href="mailto:snhkelemane@gmail.com">
+							<Text>snhkelemane@gmail.com</Text>
+						</Link>
 					</Flex>
 				</Flex>
 			</Box>
@@ -111,9 +111,11 @@ function HeadSection() {
 
 				{/* Resume */}
 				<Flex p="2rem" justify={"center"}>
-					<Button colorScheme="telegram" size="md">
-						Download Resume
-					</Button>
+					<Link href="./assets/resume.pdf" download>
+						<Button colorScheme="telegram" size="md" textDecoration={"none"}>
+							Download Resume
+						</Button>
+					</Link>
 				</Flex>
 			</Box>
 			<hr />

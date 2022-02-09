@@ -29,7 +29,11 @@ function ProjectLayout({
 }) {
 	return (
 		<>
-			<Center border="1px solid gray" borderRadius={"5px"}>
+			<Center
+				border="1px solid #ffadad "
+				borderRadius={"8px"}
+				boxShadow="5px 5px  5px #59f5d9 "
+			>
 				<Flex direction={"column"}>
 					<Center mt="1" p="2" height="200px" maxH="200px" overflow="hidden">
 						<Img src={img} height="190px" />
