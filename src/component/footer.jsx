@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Box, Flex
-  , Text, Link, SimpleGrid, Center
+  , Text, Link, Center
 } from "@chakra-ui/react";
 import { SiChakraui, SiReact } from "react-icons/si";
 import { TiHeart } from "react-icons/ti";
