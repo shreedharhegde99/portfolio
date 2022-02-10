@@ -1,7 +1,7 @@
 import React from "react";
 import {
-  Box, Center, Flex
-  , Text, Link
+  Box, Flex
+  , Text, Link, SimpleGrid, Center
 } from "@chakra-ui/react";
 import { SiChakraui, SiReact } from "react-icons/si";
 import { TiHeart } from "react-icons/ti";
@@ -10,37 +10,35 @@ function Footer() {
 	return (
 		<>
 			<hr />
-			<Flex
+			<Center
+				fontSize={["small", "md"]}
+				flexWrap="wrap"
+				p="10"
 				bgColor={"gray.200"}
-				justify="center"
-				fontSize={["10px", "12px", "15px"]}
-				p="4"
 			>
-				<Center textAlign={"center"} pt="1">
-					<Flex p="1" pr="2">
-						Proudly built with
-						<Box >
-							<TiHeart color="rgb(233, 30, 99)" size='1.5rem' />
+				Proudly built with <TiHeart color="#e91e63" size={"1.2rem"} /> using
+				<Link href="https://reactjs.org/" isExternal>
+					<Flex pl="2" pr="2">
+						<Box pt="1">
+							<SiReact color="#21c4f1" size={"0.9rem"} />
 						</Box>
-						using
+						<Box pl="1">React</Box>
 					</Flex>
-					<Link href="https://chakra-ui.com/" isExternal>
-						<Box>
-							<SiChakraui color="#3ac7be" size="1rem" />
+				</Link>
+				<Text>and</Text>
+				<Link href="https://chakra-ui.com/" isExternal>
+					<Flex pl="2" pr="2">
+						<Box pt="1">
+							<SiChakraui color="#3ac7bc" size="0.9rem" />
 						</Box>
-					</Link>
-					<Text padding="2px 4px">Chakra UI and</Text>
-
-					<Box pl="2">
-						<Link href="https://react-icons.github.io/react-icons" isExternal>
-							<SiReact color="#e91e63" size="1rem" />
-						</Link>
-					</Box>
-					<Text p="1">React Icons</Text>
-				</Center>
-			</Flex>
+						<Box pl="1">Chakra UI</Box>
+					</Flex>
+				</Link>
+			</Center>
 		</>
 	);
 }
 
 export default Footer;
+      
+      
