@@ -1,14 +1,21 @@
-import React from 'react';
-import { Box, Flex,  Heading,Text, Grid,GridItem,Button,Link } from "@chakra-ui/react";
+import React from "react";
+import {
+	Box,
+	Flex,
+	Heading,
+	Text,
+	Grid,
+	GridItem,
+	Button,
+	Link,
+} from "@chakra-ui/react";
 import { VscLocation } from "react-icons/vsc";
 import { IoIosCall } from "react-icons/io";
 import { SiLinkedin, SiGithub } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
-import { FaHackerrank } from "react-icons/fa";
-
 
 function HeadSection() {
-  return (
+	return (
 		<>
 			<Box
 				height="3xs"
@@ -72,9 +79,9 @@ function HeadSection() {
 
 			<Box pt="1rem" pb="1rem" fontFamily="Fira Sans">
 				<Flex alignItems="center" justify="center">
-					<Grid gap={8} templateColumns="repeat(3,auto)">
+					<Grid gap={8} templateColumns="repeat(2,auto)">
 						<GridItem>
-							<Link
+							<Link 
 								href="https://www.linkedin.com/in/shreedharhegde99/"
 								isExternal
 							>
@@ -85,12 +92,6 @@ function HeadSection() {
 						<GridItem>
 							<Link href="https://github.com/shreedharhegde99" isExternal>
 								<SiGithub size={"2.5rem"} />
-							</Link>
-						</GridItem>
-
-						<GridItem>
-							<Link href="https://www.hackerrank.com/snhkelemane" isExternal>
-								<FaHackerrank size={"2.5rem"} color="green" />
 							</Link>
 						</GridItem>
 					</Grid>
@@ -111,8 +112,14 @@ function HeadSection() {
 
 				{/* Resume */}
 				<Flex p="2rem" justify={"center"}>
-					<Link href="./assets/resume.pdf" download>
-						<Button colorScheme="telegram" size="md" textDecoration={"none"}>
+					<Link
+						href="./assets/resume.pdf"
+						download
+						_hover={{
+							textDecoration: "none",
+						}}
+					>
+						<Button colorScheme="telegram" size="md">
 							Download Resume
 						</Button>
 					</Link>
@@ -121,9 +128,6 @@ function HeadSection() {
 			<hr />
 		</>
 	);
-  
-
 }
 
-
-export default  HeadSection
+export default HeadSection;
