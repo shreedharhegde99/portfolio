@@ -81,7 +81,7 @@ function HeadSection() {
 				<Flex alignItems="center" justify="center">
 					<Grid gap={8} templateColumns="repeat(2,auto)">
 						<GridItem>
-							<Link 
+							<Link
 								href="https://www.linkedin.com/in/shreedharhegde99/"
 								isExternal
 							>
@@ -113,7 +113,8 @@ function HeadSection() {
 				{/* Resume */}
 				<Flex p="2rem" justify={"center"}>
 					<Link
-						href="./assets/resume.pdf"
+            href="https://drive.google.com/file/d/1cpFRRZc29NEllfv9jvwTLUJpwQsETunx/view?usp=sharing"
+            isExternal
 						download
 						_hover={{
 							textDecoration: "none",
